@@ -5,8 +5,8 @@ body {
 }
 
 /* Set map, body, and html to 100% of the screen size. */
-#map,
-body,
-html {
+#map { 
     height: 100%;
 }
+/* body,
+html 
