@@ -1,7 +1,52 @@
 // Get the endpoint
 const url = "https://data.nasa.gov/api/views/gh4g-9sfh/rows.json?accessType=DOWNLOAD";
 
-// worldMap.addTo(myMap);
+// Initialize all the LayerGroups that we'll use.
+var layers = {
+  Fell: new L.LayerGroup(),
+  Found: new L.LayerGroup()
+};
+
+// Create a map object.
+var myMap = L.map("map", {
+    center: [15.5994, -28.6731],
+    zoom: 2.5,
+    layers:[
+      layers.Fell,
+      layers.Found
+    ]
+    });
+
+
+// Add a tile layer.
+var worldMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+})
+worldMap.addTo(myMap);
+
+// Create an overlays object to add to the layer control.
+var overlays = {
+  "Fell": layers.Fell,
+  "Found": layers.Found
+};
+
+// Create a control for our layers, and add our overlays to it.
+L.control.layers(null, overlays).addTo(myMap);
+
+// Initialize an object that contains icons for each layer group.
+// var icons = {
+//   Fall: L.ExtraMarkers.icon({
+//     icon: "ion-settings",
+//     iconColor: "white",
+//     markerColor: "yellow",
+//     shape: "star"
+//   }),
+//   EMPTY: L.ExtraMarkers.icon({
+//     icon: "ion-android-bicycle",
+//     iconColor: "white",
+//     markerColor: "red",
+//     shape: "circle"
+//   })}
 
   buildDataset()
 // Build function for the metadata
@@ -18,112 +63,134 @@ function buildDataset() {
          }
     else if (dataset[i][13]== 'Found') {
             listFound.push(dataset[i])
-    }};
-    
-    var fellItem = [];
+    }
+        
+    };
+
+  /*   var fellLat = [];
+    var fellLong = [];
+    var foundLat = [];
+    var foundLong = [];
+
+    for (let i = 0; i < listFell.length; i++) {
+      if ((listFell[i][15] != 'Null')) {
+        fellLat.push(listFell[i][15]);
+      } 
+      else if ((listFell[i][16] != 'Null')){
+        fellLong.push(listFell[i][16]);
+      }
+      else if ((listFell[i][15] != 'Null')) {
+        foundLat.push(listFound[i][15]);
+      } 
+      else if ((listFell[i][16] != 'Null')) {
+        foundLong.push(listFound[i][16]);
+      }
+
+      var felllatlng = [fellLat, fellLong]
+
+      var foundlatlng = [foundLat, foundLong]
+
+      var fellMarker = L.marker(felllatlng)
+      var foundMarker = L.marker(foundlatlng)
+   */
+    // };
     var fellLat = [];
     var fellLong = [];
     var foundLat = [];
     var foundLong = [];
-    var foundItem = [];
-    var fellPlace = [];
-    var fellDate = [];
-    var fellType = [];
-    var fellSize = [];
-    var foundPlace = [];
-    var foundDate = [];
-    var foundType = [];
-    var foundSize = [];
-    // console.log(fellLat)
-    // console.log(fellLong)
+    console.log(fellLat)
+    console.log(fellLong)
+    console.log(foundLat)
+    console.log(foundLong)   
 
-  // loop through listFell to get latitude and longitude for meteorites listed as fell
-  for (let i = 0; i < listFell.length; i++) {
+
+    for (let i = 0; i < listFell.length; i++) {
       if ((listFell[i][15] != 'Null') && (listFell[i][16] != 'Null')) {
-       // convert string number to floats and push them to arrays
         fellLat.push(parseFloat(listFell[i][15]));
         fellLong.push(parseFloat(listFell[i][16]));
-        fellPlace.push(listFell[i][8]);
-        fellDate.push(listFell[i][14]);
-        fellType.push(listFell[i][12]);
-        fellSize.push(listFell[i][11]);
-      };
-      // loop through fellLat to combine lat and long into one array for fell
-      for (let i = 0; i < fellLat.length; i++) {
-        fellItem[i] = [fellLat[i], fellLong[i]]
-    }};
-// loop through listFound tro get latitude and longitude for meteorites listed as found
-  for (let i = 0; i < listFound.length; i++) {
-      if ((listFound[i][15] != null) && (listFound[i][16] != null)) {
-       // convert string number to float and push to arrays
+      }
+       /*  fellLat.push(parseFloat(listFell[i][15]));
+        fellLong.push(parseFloat(listFell[i][16]));
+       */
+      var felllatlng = [fellLat[i], fellLong[i]];
+      var fellMarker = L.marker(felllatlng);
+    }
+
+    for (let i = 0; i < listFound.length; i++) {
+      if ((listFound[i][15] != 'Null') && (listFound[i][16] != 'Null')) {
         foundLat.push(parseFloat(listFound[i][15]));
         foundLong.push(parseFloat(listFound[i][16]));
-        foundPlace.push(listFound[i][8]);
-        foundDate.push(listFound[i][14]);
-        foundType.push(listFound[i][12]);
-        foundSize.push(listFound[i][11]);
-      };
-      // loop through foundLat to get lat and long into one array for found
-      for (let i = 0; i < foundLat.length; i++) {
-        foundItem[i] = [foundLat[i], foundLong[i]]
-    }};
-    console.log(fellItem);
-    console.log(foundItem);
+      }
+ /*        foundLat.push(parseFloat(listFound[i][15]));
+        foundLong.push(parseFloat(listFound[i][16])); */
+      
+        var foundlatlng = [foundLat[i], foundLong[i]];
+        var foundMarker = L.marker(foundlatlng);
+       }
+/* 
+    for (let i = 0; i < listFound.length; i++) {
+      if ((listFound[i][15] != 'Null')) {
+          foundLat.push(listFound[i][15]);
+      } 
+      else if ((listFound[i][16] != 'Null')){
+          foundLong.push(listFound[i][16]);
+      }
+          foundLat.push(parseFloat(listFound[i][15]));
+          foundLong.push(parseFloat(listFound[i][16]));
+        
+          var foundlatlng = [foundLat[i], foundLong[i]];
+          var foundMarker = L.marker(foundlatlng);
+         }    
+ */
+     // Add the new marker to the appropriate layer.
+     fellMarker.addTo(myMap);
+     foundMarker.addto(myMap);
+    })}
+  
+ 
+
   
 
-// add fell points to fell layer
-for (let i = 0; i < fellItem.length; i++) {
-  var fellMarker = L.marker(L.latLng(fellItem[i]))
-  .bindPopup(`<h1>${listFell[i][8]}<h1> <hr> <h3>${listFell[i][4]}<h3>`)
-  .addTo(Found)
-};
 
-// add found points to found layer
-for (let i = 0; i < foundItem.length; i++) {
-  var foundMarker = L.marker(L.latLng(foundItem[i]))
-  .bindPopup(`<h1>${listFound[i][8]}<h1> <hr> <h3>${listFound[i][4]}<h3>`)
-  .addTo(Found)
-};
+   // Create an object to keep the number of markers in each layer.
+  //  var meteoriteCount = {
+  //   Fell: 0,
+  //   Found: 0
+  //  };
 
-// Initialize all the LayerGroups that we'll use.
-// var layers = {
-  var Fell = new L.markerClusterGroup();
-  var Found = new L.markerClusterGroup();
-// };
+   
+    
 
-// add base map layers.
-var worldMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
+  // var meteoriteStatus;
+  // var fallFound = dataset[i][13];
 
-var topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-});
+  // for (let i = 0; i < dataset.length; i++) {
 
-// create baseMaps object
-var baseMaps = {
-  'Street Map': worldMap,
-  'Topography Map': topo
-};
+  //    // Create a new station object with properties of both station objects.
+  //    var meteorite = Object.assign({}, dataset[i], dataset.fallFound[i]);
+     
+  //    // If a station is listed but not installed, it's coming soon.
+  //    if (meteorite[i][13]== 'Fell') {
+  //       meteoriteStatus = "Fell";
+  //    }
+  //    // Otherwise, the station is normal.
+  //    else {
+  //      meteoriteStatus = 'Found';
+  //    }
+    
+    //  // Update the station count.
+    // meteoriteCount[meteoriteStatus]++;
+    // // Create a new marker with the appropriate icon and coordinates.
+    // var newMarker = L.marker([dataset[15], dataset[16]], {
+    //   icon: icons[meteoriteStatus]
+    // });
 
- // Create an overlays object to add to the layer control.
- var overlays = {
- 'Fell': layers.Fell,
- 'Found': layers.Found
- };
+    // // Add the new marker to the appropriate layer.
+    // newMarker.addTo(layers[meteoriteStatus]);
 
-// Create a map object.
-var myMap = L.map("map", {
-  center: [15.5994, -28.6731],
-  zoom: 2.5,
-  layers: [worldMap, layers.Fell]
-  });
+    // Bind a popup to the marker that will  display on being clicked. This will be rendered as HTML.
+    // newMarker.bindPopup(station.name + "<br> Capacity: " + station.capacity + "<br>" + station.num_bikes_available + " Bikes Available");
+  
 
-// Create a control for our layers, and add our overlays to it.
-L.control.layers(baseMaps, overlays, {
-  collapsed: false 
-}).addTo(myMap);
-})};
-
-
-
+  // Call the updateLegend function, which will update the legend!
+  // updateLegend(updatedAt, stationCount);
