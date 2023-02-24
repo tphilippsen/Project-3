@@ -6,7 +6,7 @@ Resources Utilized: CSV, JSON  <br />
 
 ## Objective
 
-We want to use this data to answer these questions: <br />
+Use this data to answer these questions: <br />
 - Where are meteorites falling and being found? <br />
 - What are the most commonly found meteorite types? <br />
 - Are the more modern century’s collecting more meteorites compared to older century’s? <br />
