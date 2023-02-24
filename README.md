@@ -2,10 +2,10 @@
 
 ### Source
 
-Data Source: https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e
-Resources Utilized: CSV, JSON
-Data Variables: Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Reclass
-Max Year in Dataset: 2013
+Data Source: https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e  <br />
+Resources Utilized: CSV, JSON  <br />
+Data Variables: Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Reclass  <br />
+Max Year in Dataset: 2013  <br />
 
 ### Objective
 
@@ -32,7 +32,7 @@ We utilized SQL to transform our dataset in various ways. The biggest benefit wa
 
 ### Analyze
 
-From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved ____[ADD TEXT HERE]______ or in our website ______[ADD TEXT HERE]________
+From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved __ __ [ADD TEXT HERE] ___ ___ or in our website ____ __ [ADD TEXT HERE] ___ _____
 
 ### If we had more time...
 
