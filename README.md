@@ -13,7 +13,7 @@ We want to use this data to answer the below questions about meteors:
 
 ## SQL Evaluation 
 
-We utilized SQL to transform our dataset in various ways. The biggest benefit was by creating different categories within the data using the case when function.  The categories we created are: Century, Size Group, Hemisphere and Classification Group. Various data rollups for these categories can be found in the "SQL" Folder in our GitHub.
+We utilized SQL to transform our dataset in various ways. We were able to create new categorizations within the data using various case statements.  The new columns we created were: Century, Size Group, Hemisphere and Classification Group. Code for this can be seen in Meteorites.sql, and various corresponding data rollups can be found in the "SQL-Data-Outputs" Folder in our GitHub.
 
 ## Plotly 
 
