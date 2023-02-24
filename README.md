@@ -1,15 +1,15 @@
 # *Project 3* - Data Analysis and Visualization of Meteorite History
 
 **[Click Here to view our Source](https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e)** <br />
-**Data Variables:** Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Reclass  <br />
 **Resources Utilized:** CSV, JSON  <br />
+**Data Variables:** Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Reclass  <br />
 
 ## Objective
 
 Use this data to answer these questions: <br />
 - Where are meteorites falling and being found? <br />
-- What are the most commonly found meteorite types? <br />
-- Are the more modern century’s collecting more meteorites compared to older century’s? <br />
+- What are the most commonly found types of meteorites? <br />
+- Are there more meteorites being found now, compared to older-less populated century’s? <br />
 
 ## SQL Evaluation 
 
