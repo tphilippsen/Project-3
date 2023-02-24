@@ -4,33 +4,38 @@
 
 Data Source: https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e
 Resources Utilized: CSV, JSON
+Data Variables: Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Reclass
+Max Year in Dataset: 2013
 
 ### Objective
 
-- Where are 
-- Where are you most likely to find a meteorite 
+We want to use this data to answer the below questions about meteors: 
+- Where are meteorites falling and being found?
+- What are the most commonly found meteorite types?
+- Are the more modern centurys collecting more meteorites compared to older centurys?
 
 ### SQL Evaluation 
 
-We utilized SQL to manipulate our dataset to 
+We utilized SQL to transform our dataset in various ways. The biggest benefit was by creating different categories within the data using the case when function.  The categories we created are: Century, Size Group, Hemisphere and Classification Group. Various data rollups for these categories can be found in the "SQL" Folder in our Github.
+
+### Plotly 
+
+[ADD TEXT HERE]
 
 ### Open Street Map
-
-We created a map which
-
-### Python - plotly
 
 [ADD TEXT HERE]
 
 ### CSS & HTML
 
-We used CSS to display our results found at this link [ADD TEXT HERE]
+[ADD TEXT HERE]
 
 ### Analyze
 
-From our data we found that [ADD TEXT HERE]
+From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved ____[ADD TEXT HERE]______ or in our website ______[ADD TEXT HERE]________
 
 ### If we had more time...
 
-- Would review the correlation between x and y
-- Would [ADD TEXT HERE]
+- We would add more variables to our map.  Mostly we wanted to add different colored markers for fell and found 
+- We would create more visuals in plotly utilizing the categories created in SQL 
+- [ADD TEXT HERE]
