@@ -13,7 +13,7 @@ Use this data to answer these questions: <br />
 
 ## SQL Evaluation 
 
-We utilized SQL to transform our dataset in various ways. We were able to create new categorizations within the data using various case statements.  The new columns we created were: Century, Size Group, Hemisphere and Classification Group. Code for this can be seen in Meteorites.sql, and various corresponding data rollups can be found in the "SQL-Data-Outputs" Folder in our GitHub.
+We utilized SQL to transform our dataset in various ways. We were able to create new categorizations within the data using multiple case statements.  The new columns we created were: Century, Size Group, Hemisphere and Classification Group. The code for this transformation can be seen in Meteorites.sql, and various corresponding data rollups can be found in the "SQL-Data-Outputs" Folder on our GitHub.
 
 ## Plotly 
 
@@ -35,4 +35,3 @@ From our data we were able to answer all of the questions in our objective.  For
 
 - We would add more variables to our map.  Mostly we wanted to add different colored markers for fell and found <br />
 - We would create more visuals in plotly utilizing the categories created in SQL <br />
-- [ADD TEXT HERE] <br />
