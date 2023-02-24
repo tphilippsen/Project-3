@@ -1,8 +1,8 @@
-# Project 3 - Data Analysis of Meteorite History
+# *Project 3* - Data Analysis and Visualization of Meteorite History
 
 ## Data Source
 
-Link: https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e  <br />
+[Link](https://catalog.data.gov/dataset/meteorite-landings/resource/389dab1c-1e2e-4b13-83bf-d05a0219fe3e) <br />
 
 Resources Utilized: CSV, JSON  <br />
 
@@ -15,11 +15,11 @@ Max Year in Dataset: 2013  <br />
 We want to use this data to answer the below questions about meteors: 
 - Where are meteorites falling and being found?
 - What are the most commonly found meteorite types?
-- Are the more modern centurys collecting more meteorites compared to older centurys?
+- Are the more modern century’s collecting more meteorites compared to older century’s?
 
 ## SQL Evaluation 
 
-We utilized SQL to transform our dataset in various ways. The biggest benefit was by creating different categories within the data using the case when function.  The categories we created are: Century, Size Group, Hemisphere and Classification Group. Various data rollups for these categories can be found in the "SQL" Folder in our Github.
+We utilized SQL to transform our dataset in various ways. The biggest benefit was by creating different categories within the data using the case when function.  The categories we created are: Century, Size Group, Hemisphere and Classification Group. Various data rollups for these categories can be found in the "SQL" Folder in our GitHub.
 
 ## Plotly 
 
