@@ -6,8 +6,6 @@ Data Variables: Name, Name ID, Mass (g), Fall, Year, Lat, Lon, Geolocation, Recl
 
 Resources Utilized: CSV, JSON  <br />
 
-Max Year in Dataset: 2013  <br />
-
 ## Objective
 
 We want to use this data to answer the below questions about meteors: 
