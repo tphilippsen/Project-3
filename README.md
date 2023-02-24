@@ -17,7 +17,7 @@ We utilized SQL to transform our dataset in various ways. We were able to create
 
 ## Plotly 
 
-[ADD TEXT HERE]
+Our group utilized Plotly to create interactive graphs that are included into our dashboard. The plotly.express function was used to create those graphs which include a bar chart for the Fell vs Found data. This graph analyzed the total number of meteorites that were "Fell" and total number of metoerites that were "Found". Another bar chart using this function was created to analyze how many "Fell" meteorites and "Found" meteorites were discovered each century. This bar chart was seperated into two, based on "Fell" and "Found" since the count numbers were so far apart. We seperated them in order to make the bars in the graph more visible rather than putting them together since putting them together would make the smaller counts essentially invisible. Last, our final interactive graph was a pie chart which outlined the different types of meteorites and the percentage of each that was contained in our data. 
 
 ## Open Street Map
 
