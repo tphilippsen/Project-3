@@ -7,31 +7,30 @@ Resources Utilized: CSV, JSON
 
 ### Objective
 
-We wanted to look at 
-- Does this correlate with this
+- Where are 
 - Where are you most likely to find a meteorite 
 
-## SQL Evaluation 
+### SQL Evaluation 
 
-We utilized SQL to...
+We utilized SQL to manipulate our dataset to 
 
-## Open Street Map
+### Open Street Map
 
 We created a map which
 
-## Python - plotly
+### Python - plotly
 
 [ADD TEXT HERE]
 
-## CSS & HTML
+### CSS & HTML
 
 We used CSS to display our results found at this link [ADD TEXT HERE]
 
-## Analyze
+### Analyze
 
 From our data we found that [ADD TEXT HERE]
 
-## If we had more time...
+### If we had more time...
 
 - Would review the correlation between x and y
 - Would [ADD TEXT HERE]
