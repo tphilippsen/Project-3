@@ -6,10 +6,10 @@ Resources Utilized: CSV, JSON  <br />
 
 ## Objective
 
-We want to use this data to answer the below questions about meteors: 
-- Where are meteorites falling and being found?
-- What are the most commonly found meteorite types?
-- Are the more modern century’s collecting more meteorites compared to older century’s?
+We want to use this data to answer the below questions about meteors: <br />
+- Where are meteorites falling and being found? <br />
+- What are the most commonly found meteorite types? <br />
+- Are the more modern century’s collecting more meteorites compared to older century’s? <br />
 
 ## SQL Evaluation 
 
@@ -33,6 +33,6 @@ From our data we were able to answer all of the questions in our objective.  For
 
 ## If we had more time...
 
-- We would add more variables to our map.  Mostly we wanted to add different colored markers for fell and found 
-- We would create more visuals in plotly utilizing the categories created in SQL 
-- [ADD TEXT HERE]
+- We would add more variables to our map.  Mostly we wanted to add different colored markers for fell and found <br />
+- We would create more visuals in plotly utilizing the categories created in SQL <br />
+- [ADD TEXT HERE] <br />
