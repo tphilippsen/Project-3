@@ -73,13 +73,13 @@ function buildDataset() {
     if ((dataset[i][13]== 'Found') && (!!dataset[i][15]) && (!!dataset[i][16])) {
             listFound.push(dataset[i])
     }
-    if ((!!dataset[i][12])) {
+    if ((dataset[i][12] < 100) && (!!dataset[i][15]) && (!!dataset[i][16])) {
       listSize.push(dataset[i])
     }
-    if ((!!dataset[i][12])) {
+    if ((dataset[i][12] > 100) && (dataset[i][12] < 1000) && (!!dataset[i][15]) && (!!dataset[i][16])) {
       listSize2.push(dataset[i])
     }
-    if ((!!dataset[i][12])) {
+    if ((dataset[i][12] > 1000) && (dataset[i][12] < 10000) && (!!dataset[i][15]) && (!!dataset[i][16])) {
       listSize3.push(dataset[i])
     }
     };
@@ -135,7 +135,7 @@ console.log(listSize3)
       console.log(fellItem)
     
       for (let i = 0; i < listSize.length; i++) {
-        if ((listSize[i][12] >= 20000) && (listSize[i][12] != 'Null') && (listSize[i][12] != null) && (listSize[i][12] != "") && (listSize[i][12] != "0")) {
+        if (!!listSize[i][12] && (!!listSize[i][15]) && (!!listSize[i][16])) {
           small.push(parseFloat(listSize[i][12]));
           smallLat.push(parseFloat(listSize[i][15]));
           smallLng.push(parseFloat(listSize[i][16]));
@@ -148,7 +148,7 @@ console.log(listSize3)
       console.log(smallItem)
     
       for (let i = 0; i < listSize2.length; i++) {
-        if ((listSize2[i][12] >= 20000) && (listSize2[i][12] != 'Null') && (listSize2[i][12] != null) && (listSize2[i][12] != "") && (listSize2[i][12] != "0")) {
+        if (!!listSize2[i][12]) {
           small2.push(parseFloat(listSize2[i][12]));
           smallLat2.push(parseFloat(listSize2[i][15]));
           smallLng2.push(parseFloat(listSize2[i][16]));
@@ -161,7 +161,7 @@ console.log(listSize3)
       console.log(smallItem2)
       
       for (let i = 0; i < listSize3.length; i++) {
-        if ((listSize3[i][12] >= 20000) && (listSize3[i][12] != 'Null') && (listSize3[i][12] != null) && (listSize3[i][12] != "") && (listSize3[i][12] != "0")) {
+        if ((listSize3[i][12] != 'Null') && (listSize3[i][12] != null) && (listSize3[i][12] != "") && (listSize3[i][12] != "0")) {
           small3.push(parseFloat(listSize3[i][12]));
           smallLat3.push(parseFloat(listSize3[i][15]));
           smallLng3.push(parseFloat(listSize3[i][16]));
@@ -201,15 +201,6 @@ console.log(listSize3)
         .addTo(Fell);
         console.log("im here")
       }
-      for (let i = 0; i < smallItem.length; i++) {
-        L.marker(L.latLng(smallItem[i]))
-/*         L.Icon.markerColor = "red" */
-        .bindPopup(`<h1>${listSize[i][12]}</h1> <hr>
-        <h3>${listSize[i][12]}</h3>`)
-        .addTo(Size);
-        console.log("im here")
-      }
-
       for (let i = 0; i < smallItem2.length; i++) {
         L.marker(L.latLng(smallItem2[i]))
 /*         L.Icon.markerColor = "red" */
@@ -218,6 +209,7 @@ console.log(listSize3)
         .addTo(Size_2);
         console.log("im here")
       }
+
       for (let i = 0; i < smallItem3.length; i++) {
         L.marker(L.latLng(smallItem3[i]))
 /*         L.Icon.markerColor = "red" */
@@ -226,6 +218,15 @@ console.log(listSize3)
         .addTo(Size_3);
         console.log("im here")
       }
+      for (let i = 0; i < smallItem.length; i++) {
+        L.marker(L.latLng(smallItem[i]))
+/*         L.Icon.markerColor = "red" */
+        .bindPopup(`<h1>${listSize[i][12]}</h1> <hr>
+        <h3>${listSize[i][12]}</h3>`)
+        .addTo(Size);
+        console.log("im here")
+      }
+      
       Size.addTo(myMap)
       Size_2.addTo(myMap)
       Size_3.addTo(myMap)
