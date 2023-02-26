@@ -1,6 +1,10 @@
 // Get the endpoint
 const url = "https://data.nasa.gov/api/views/gh4g-9sfh/rows.json?accessType=DOWNLOAD";
 
+const filepath1 = 'Python Stuff (Graphs using Plotly)/figure1.json'
+const filepath2 = 'Python Stuff (Graphs using Plotly)/figure2.json'
+const filepath3 = 'Python Stuff (Graphs using Plotly)/figure3.json'
+
 // Initialize all the LayerGroups that we'll use.
 /* var layers = { */
 var Fell = new L.markerClusterGroup();
@@ -31,7 +35,7 @@ var myMap = L.map("map", {
   center: [15.5994, -28.6731],
   zoom: 2.5,
   layers:[
-worldMap
+worldMap, Found
   ]
   });
 // Create a control for our layers, and add our overlays to it.
@@ -52,6 +56,26 @@ L.control.layers(baselayer, overlays).addTo(myMap);
 //     markerColor: "red",
 //     shape: "circle"
 //   })}
+plotlyCharts() 
+function plotlyCharts() {
+  d3.json(filepath1).then(function(data) {
+   var chartOne = data.data;
+  
+  Plotly.newPlot('fellChart', chartOne)
+  })
+  d3.json(filepath2).then(function(data) {
+    var chartTwo = data.data;
+   
+   Plotly.newPlot('foundChart', chartTwo)
+   })
+   d3.json(filepath3).then(function(data) {
+    var chartThree = data.data;
+   
+   Plotly.newPlot('typeChart', chartThree)
+   })
+ };
+
+
 
   buildDataset()
 
@@ -227,6 +251,7 @@ console.log(listSize3)
         console.log("im here")
       }
       
+      // myMap.addTo(Size)
       Size.addTo(myMap)
       Size_2.addTo(myMap)
       Size_3.addTo(myMap)
