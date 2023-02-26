@@ -1297,7 +1297,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 120%;
+    width: 100%;
     height: 100%;
     background-image: url("../img/kisspng-asteroids-asteroid-mining-asteroid-5ac1d4a6c0d394.6156789115226523267898.png");
     background-position: center;
@@ -1398,7 +1398,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 120%;
+    width: 100%;
     height: 100%;
     background-image: url("../img/skyview.png");
     background-position: center;
@@ -1797,4 +1797,10 @@ body {
 #map {
     height: 100%;
     width: 100%;
+}
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }

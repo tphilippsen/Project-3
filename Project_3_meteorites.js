@@ -57,16 +57,24 @@ L.control.layers(baselayer, overlays).addTo(myMap);
 //     shape: "circle"
 //   })}
 plotlyCharts() 
+var layout = {
+  width:400,
+  height:400,
+}
+var pielayout = {
+  width:800,
+  height:600,
+}
 function plotlyCharts() {
   d3.json(filepath1).then(function(data) {
    var chartOne = data.data;
   
-  Plotly.newPlot('fellChart', chartOne)
+  Plotly.newPlot('fellChart', chartOne, layout)
   })
   d3.json(filepath2).then(function(data) {
     var chartTwo = data.data;
    
-   Plotly.newPlot('foundChart', chartTwo)
+   Plotly.newPlot('foundChart', chartTwo,layout)
    })
    d3.json(filepath3).then(function(data) {
     var chartThree = data.data;
