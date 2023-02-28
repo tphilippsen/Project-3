@@ -29,7 +29,7 @@ Our group utilized Plotly to create interactive graphs that are included into ou
 
 ## Analyze
 
-From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved __ __ [ADD TEXT HERE] ___ ___ or in our website ____ __ [ADD TEXT HERE] ___ _____
+From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved in "Meteorites Project 3 Presentation.pptx" or on our website saved in "index_v2.html"
 
 ## Data limitations 
 - More data in past 200 years, compared to earlier years <br />
