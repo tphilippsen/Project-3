@@ -26,9 +26,9 @@ var baselayer = {
 var overlays = {
   "Fell": Fell,
   "Found": Found,
-  "Size" : Size,
-  "Size_2" : Size_2,
-  "Size_3" : Size_3
+  "Small" : Size,
+  "Medium" : Size_2,
+  "Large" : Size_3
 };
 // Create a map object.
 var myMap = L.map("map", {
