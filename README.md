@@ -31,6 +31,10 @@ Our group utilized Plotly to create interactive graphs that are included into ou
 
 From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved __ __ [ADD TEXT HERE] ___ ___ or in our website ____ __ [ADD TEXT HERE] ___ _____
 
+## Data limitations 
+- More data in past 200 years, compared to earlier years <br />
+- More data points: Month, Continent, etc. <br />
+
 ## If we had more time...
 
 - We would add more variables to our map.  Mostly we wanted to add different colored markers for fell and found <br />
