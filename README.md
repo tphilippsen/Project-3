@@ -17,7 +17,7 @@ We utilized SQL to transform our dataset in various ways. We were able to create
 
 ## Plotly 
 
-Our group utilized Plotly to create interactive graphs that are included into our dashboard. The plotly.express function was used to create those graphs which include a bar chart for the Fell vs Found data. This graph analyzed the total number of meteorites that were "Fell" and total number of metoerites that were "Found". Another bar chart using this function was created to analyze how many "Fell" meteorites and "Found" meteorites were discovered each century. This bar chart was seperated into two, based on "Fell" and "Found" since the count numbers were so far apart. We seperated them in order to make the bars in the graph more visible rather than putting them together since putting them together would make the smaller counts essentially invisible. Last, our final interactive graph was a pie chart which outlined the different types of meteorites and the percentage of each that was contained in our data. 
+Our group utilized Plotly to create interactive graphs that are included into our dashboard. The plotly.express function was used to create those graphs which include a bar chart for the Fell vs Found data. We created multiple graphs which analyzed the total number of meteorites that were "Fell" and total number of metoerites that were "Found".  Including a graph which looks at "Fell" and "Found" by each century. This bar chart was seperated into two, based on "Fell" and "Found" since the count numbers were so far apart. Additionally, we created an interactive pie chart which outlined the different types of meteorites and the percentage of each that was contained in our data. 
 
 ## Open Street Map
 
@@ -29,11 +29,11 @@ Our group utilized Plotly to create interactive graphs that are included into ou
 
 ## Analyze
 
-From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved in "Meteorites Project 3 Presentation.pptx" or on our website saved in "index_v2.html"
+From our data we were able to answer all of the questions in our objective.  For more information please see our PowerPoint saved in "Meteorites Project 3 Presentation.pptx" or on our dashboard saved in "index_v2.html"
 
 ## Data limitations 
 - More data in past 200 years, compared to earlier years <br />
-- More data points: Month, Continent, etc. <br />
+- More data points: Date, Country, Continent, etc. <br />
 
 ## If we had more time...
 
