@@ -26,11 +26,11 @@ Our group utilized Plotly to create interactive graphs that are included into ou
 
 ## Open Street Map
 
-[ADD TEXT HERE]
+We were able to utilize open street map, d3, and leaflet to create a marker cluster map showing where the meteorites fell and were found geographically around the world.  We created different layers on the map to correspond with different ranges of sizes of those that fell and were found.
 
 ## CSS & HTML
 
-[ADD TEXT HERE]
+The CSS and HTML files were edited to account for any changes we wanted to see in our webpage.  Both the HTML file and the CSS files needed to be edited to account for different elements we wanted to present but also to account for changes needed from or sample CSS file and webpage template.  The CSS file needed to be edited to account for changes in images for our page as well as to account for our map.
 
 ## Analyze
 
