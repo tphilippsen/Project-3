@@ -38,6 +38,6 @@ From our data we were able to answer all of the questions in our objective.  For
 ## If we had more time...
 
 * We would add more variables to our map  <br />
-** Different colored markers for fell and found<br />
-** Clean up date format to show only year instead of MM-DD-YYYY, since data only has year <br />
+  * Different colored markers for fell and found<br />
+  * Clean up date format to show only year instead of MM-DD-YYYY, since data only has year <br />
 * We would create more visuals in plotly utilizing the categories created in SQL <br />
