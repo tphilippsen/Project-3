@@ -25,6 +25,7 @@ Our group utilized Plotly to create interactive graphs that are included into ou
 
 
 ## Open Street Map
+<img width="1307" alt="Screen Shot 2023-02-27 at 9 24 29 PM" src="https://user-images.githubusercontent.com/64128126/221745968-70116fd5-87ba-49a4-93fd-2b8fe9b05ab2.png">
 
 We were able to utilize open street map, d3, and leaflet to create a marker cluster map showing where the meteorites fell and were found geographically around the world.  We created different layers on the map to correspond with different ranges of sizes of those that fell and were found.
 
